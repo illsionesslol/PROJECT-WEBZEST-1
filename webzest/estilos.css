@@ -1,0 +1,156 @@
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container img {
+    max-width: 50%;
+    height: 745.5px;
+}
+
+.container .text {
+    margin-left: 20px;
+    font-size: 120px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text span {
+    font-family: "Times New Roman", sans-serif;
+}
+
+.container .text::after {
+    content: "";
+    display: block;
+    width: 75%;
+    height: 3px;
+    background: linear-gradient(to right, #0000, #626d71, #383e48, #0000);
+    margin: 10px auto 0 auto;
+}
+
+.text .w {
+    color: #383e48;
+}
+.text .e1 {
+    color: #626d71;
+}
+.text .b {
+    color: #cdcdc0;
+}
+.text .z {
+    color: #c2b19c;
+}
+.text .e2 {
+    color: #ddbc95;
+}
+.text .s {
+    color: #d6a368;
+}
+.text .t {
+    color: #b38867;
+}
+
+.phrase {
+    margin-top: 15px;
+    font-size: 22px;
+    font-family: "Copperplate Gothic";
+    text-align: center;
+    color: #273755;
+}
+
+body {
+    margin: 0;
+    font-family: "Alfa Slab One";
+}
+
+.navbar {
+    background: linear-gradient(90deg, #657b9e, #3d4a55);
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family: Times New Roman;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #b38867;
+    transform: scale(1.1);
+}
+
+.navbar ul li a.active {
+    color: #ddbc95;
+    border-bottom: 2px solid #ddbc95;
+}
+
+.content {
+    padding: 50px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+}
+h2 {
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+p,
+ul {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #333333;
+    text-decoration: none;
+}
+
+footer .signature {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 18px;
+}

@@ -1,0 +1,103 @@
+ body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4eee7;
+        }
+
+        .navbar {
+            background: linear-gradient(90deg, #657b9e, #3d4a55);
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            font-family: Times New Roman;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 20px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #f0b690;
+        }
+
+        .navbar a.active {
+            color: #f0b690;
+            text-decoration: underline;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 60px);
+        }
+
+        .contact-container {
+            background-color: #fff;
+            width: 350px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .contact-container img {
+            width: 100%;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-family: Segoe script;
+            font-size: 36px;
+            margin: 15px 0 5px 0;
+            letter-spacing: 2px;
+            font-weight: bold;
+            color: #222;
+        }
+
+
+        .contact-info {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-info p i {
+            margin-right: 10px;
+            font-size: 18px;
+            color: #555;
+        }
+
+        .contact-info p a {
+            color: #333;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .contact-info p a:hover {
+            text-decoration: underline;
+        }
+
+        .download-icon {
+            font-size: 24px;
+            color: #333;
+            display: inline-block;
+            margin-top: 10px;
+        }

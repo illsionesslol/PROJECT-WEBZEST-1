@@ -1,0 +1,161 @@
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to top, #e0dcdc, #f8f5f3); /* Degradado de abajo hacia arriba */
+        }
+
+        /* Contenedor principal */
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px;
+            background-color: #f8f5f3;
+            max-width: 90%; /* Ajusta el contenedor para que ocupe casi todo el ancho */
+            margin: 0 auto; /* Centra el contenido */
+        }
+
+        /* Estilos para el logo y el texto de la izquierda */
+        .left-section {
+            text-align: center;
+            color: #333;
+            flex: 1; /* Ocupar más espacio proporcionalmente */
+        }
+
+        .logo {
+            width: 150px; /* Ajusta el tamaño de la imagen según lo necesites */
+            height: auto;
+        }
+
+        h1 {
+            font-size: 36px; /* Ajuste del tamaño */
+            margin: 10px 0 5px 0;
+            color: #333;
+        }
+
+        h2 {
+            font-size: 16px;
+            margin: 5px 0;
+            color: #444;
+        }
+
+        /* Estilos para la sección de 'Quiénes Somos' */
+        .right-section {
+            max-width: 600px;
+            padding-left: 20px;
+            border-left: 2px solid #cd9270;
+            flex: 1; /* Ocupar más espacio proporcionalmente */
+        }
+
+        .right-section h3 {
+            font-size: 32px;
+            color: #333;
+            margin: 0;
+        }
+
+        .right-section h3 span {
+            font-style: italic;
+            color: #cd9270;
+        }
+
+        p {
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 1.6;
+            color: white; /* Cambiar a blanco para que contraste con el fondo oscuro */
+            background-color: #4c4945; /* Fondo oscuro para el texto */
+            padding: 15px;
+            border-radius: 5px;
+        }
+.navbar {
+    background: linear-gradient(90deg, #657b9e, #3d4a55);
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #b38867;
+    transform: scale(1.1);
+}
+
+.navbar ul li a.active {
+    color: #ddbc95;
+    border-bottom: 2px solid #ddbc95;
+}
+
+.content {
+    padding: 50px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+}
+h2 {
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+p,
+ul {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #333333;
+    text-decoration: none;
+}
+
+footer .signature {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 18px;
+}

@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    font-family: "Alfa Slab One";
+}
+
+.navbar {
+    background: linear-gradient(90deg, #657b9e, #3d4a55);
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family: Times New Roman;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #b38867;
+    transform: scale(1.1);
+}
+
+.navbar ul li a.active {
+    color: #ddbc95;
+    border-bottom: 2px solid #ddbc95;
+}
+
+.content {
+    padding: 50px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+}
+
+.main-container {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .main-container h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #fff;
+            background-image: url(IMAGENES/s.jpg);
+            width: 980px;
+            height: 240px;
+            border-radius: 50px;
+        }
+
+.title {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background-image: url('IMAGENES/s.jpg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('IMAGENES/s.jpg');
+  opacity: 0;
+  z-index: -1;
+
+}
+
+        /* Barra de búsqueda */
+        .search-bar {
+            margin: 20px 0;
+        }
+
+        .search-bar input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            border-radius: 20px;
+            border: 2px solid #ddd;
+            font-size: 18px;
+            outline: none;
+        }
+
+        .search-bar button {
+            background-color: #ffcc7f;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-left: -40px;
+        }
+
+        /* Contenedor de las plantillas */
+        .templates-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            gap: 30px;
+        }
+
+        .template-card {
+            width: 250px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .template-card img {
+            width: 100%;
+            border-radius: 12px;
+        }
+
+        .template-card h3 {
+            font-size: 20px;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .template-card button {
+            background-color: #f0b690;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        .template-card button:hover {
+            background-color: #ffcc7f;
+        }
+
+        /* Barra lateral */
+        .sidebar {
+            position: absolute;
+            left: 20px;
+            top: 150px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar button {
+            background-color: #ffcc7f;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 25px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .sidebar button:hover {
+            background-color: #f0b690;
+        }
